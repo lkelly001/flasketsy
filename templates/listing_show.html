@@ -7,7 +7,7 @@
         <p>${{ listing.price }}</p>
         <p>{{ listing.description }}</p>
     </div>
-    <a href="{{ url_for('index') }}">Show All</a><br />
-    <a href="{{ url_for('listing_edit', listing_id=listing.id) }}">Edit Listing</a><br />
-    <a href="{{ url_for('listing_delete', listing_id=listing.id) }}">Delete Listing</a>
+    <a class="btn btn-default" href="{{ url_for('index') }}" role="button">Show All</a><br />
+    <a class="btn btn-success" href="{{ url_for('listing_edit', listing_id=listing.id) }}" role="button">Edit Listing</a><br />
+    <a class="btn btn-danger" href="{{ url_for('listing_delete', listing_id=listing.id) }}" role="button">Delete Listing</a>
 {% endblock %}
